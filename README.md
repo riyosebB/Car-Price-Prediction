@@ -3,7 +3,7 @@
 
 ## Overview
 
-This repository contains a machine learning project for predicting car prices using a $ different models: 
+This repository contains a machine learning project for predicting car prices using a four different models: 
    
      1 Linear Regression model
      2 Ridge Regression model
