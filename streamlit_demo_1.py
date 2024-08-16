@@ -19,6 +19,7 @@ with open('Car_Sale_Price_Prediction_Lasso_Regression.pkl', 'rb') as file:
 with open('Car_Sale_Price_Prediction_Ridge_Regression.pkl', 'rb') as file:
     ridge_model = pickle.load(file)
 
+# To map the input value make to this, thus make the make_value 
 make = {'Acura': 14132.190406711654,
  'Audi': 15431.180469715699,
  'BMW': 16439.04020624885,
