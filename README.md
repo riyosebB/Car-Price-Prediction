@@ -14,6 +14,10 @@ The goal is to predict the selling price of a car based on these features. The m
 
 ## Dataset
 
+Link to the dataset:
+
+      https://www.kaggle.com/datasets/syedanwarafridi/vehicle-sales-data
+      
 The model is trained on a dataset containing various features related to cars, such as year, odometer reading, make, and more. 
 
 
