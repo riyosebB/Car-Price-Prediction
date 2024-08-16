@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-import pandas as pd
 
 import os
 
@@ -9,7 +8,6 @@ import os
 # Load data for metrics and visualizations
 folder_path = os.path.dirname(os.path.abspath(__file__))
 file_path = folder_path + "/car_sale_prediction.csv"
-df = pd.read_csv(file_path)
 
 # Load the trained models
 with open('Car Sale Price Prediction Linear Regression.pkl', 'rb') as file:
