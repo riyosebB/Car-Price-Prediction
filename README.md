@@ -34,7 +34,7 @@ The model is built using the following pipeline:
     Model Training: Using Scikit-learn's LinearRegression, RidgeRegression, LassoRegression, ElasticNetRegression class.
     Evaluation: Metrics such as RMSE and R^2 Score are used to evaluate the model's performance.
 
-## Streamlit Application
+## Streamlit Application Demo
 
 Link to the app:
 
