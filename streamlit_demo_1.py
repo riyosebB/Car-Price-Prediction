@@ -21,7 +21,7 @@ with open('Car_Sale_Price_Prediction_Ridge_Regression.pkl', 'rb') as file:
 
 make = {'Acura': 14132.190406711654,
  'Audi': 15431.180469715699,
- 'BMW': 16439.04020624885,o
+ 'BMW': 16439.04020624885,
  'Buick': 10636.497933884297,
  'Cadillac': 13100.688439220354,
  'Chevrolet': 11237.762227550524,
