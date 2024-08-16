@@ -1,12 +1,15 @@
 import streamlit as st
 import pickle
+import numpy as np
+import pandas as pd
+
 import os
 
 
 # Load data for metrics and visualizations
 folder_path = os.path.dirname(os.path.abspath(__file__))
-
-
+file_path = folder_path + "/car_sale_prediction.csv"
+df = pd.read_csv(file_path)
 
 # Load the trained models
 with open('Car Sale Price Prediction Linear Regression.pkl', 'rb') as file:
@@ -26,6 +29,13 @@ with open('Car Sale Price Prediction Ridge Regression.pkl', 'rb') as file:
 
 
 
+# Define a function to make predictions
+def predict_price(model, year, mmr, odometer, is_automatic):
+    # Prepare the input data
+    input_data = np.array([[year, mmr, odometer, is_automatic]])
+    # Make prediction
+    prediction = model.predict(input_data)
+    return prediction[0]
 
 # Streamlit app layout
 st.title('Car Price Prediction')
@@ -93,10 +103,3 @@ elif model_option == 'Ridge':
     st.image(ridge_re["Graph"])
 else:
     st.write("Please select a model.")
-
-
-
-
-
-
-
