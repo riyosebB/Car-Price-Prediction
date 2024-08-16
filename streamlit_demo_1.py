@@ -133,7 +133,7 @@ make_input = st.text_input('Make').strip().lower()
 make_value = make.get(make_input)
 
 if make_value is None:
-    st.error("The make you entered is not recognized. Please try again.")
+    pass
 else:
     # Button to predict
     if st.button('Predict Price'):
