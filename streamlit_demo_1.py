@@ -10,18 +10,18 @@ folder_path = os.path.dirname(os.path.abspath(__file__))
 file_path = folder_path + "/car_sale_prediction.csv"
 
 # Load the trained models
-with open('Car Sale Price Prediction Linear Regression.pkl', 'rb') as file:
+with open('Car_Sale_Price_Prediction_Linear_Regression.pkl', 'rb') as file:
     linear_model = pickle.load(file)
 
-with open('Car Sale Price Prediction Elastic Net.pkl', 'rb') as file:
+with open('Car_Sale_Price_Prediction_Elastic_Net.pkl', 'rb') as file:
     elastic_net_model = pickle.load(file)
 
-with open('Car Sale Price Prediction Lasso Regression.pkl', 'rb') as file:
+with open('Car_Sale_Price_Prediction_Lasso_Regression.pkl', 'rb') as file:
     lasso_model = pickle.load(file)
 
 
 
-with open('Car Sale Price Prediction Ridge Regression.pkl', 'rb') as file:
+with open('Car_Sale_Price_Prediction_Ridge_Regression.pkl', 'rb') as file:
     ridge_model = pickle.load(file)
 
 
